@@ -1,0 +1,45 @@
+.home-page-div{
+    background-image: radial-gradient(circle, #AC87C5, #E6B9DE,#86B6F6,#F1E4C3,#FFE7C1);
+    
+}
+
+.home-main-div{
+    box-shadow: 4px 4px 4px #68948480 ,inset 2px 2px 4px #739492ac;
+    background-color: #c2eaeda2;
+    height:130%;
+    width: 180%;
+    opacity: 1.5;
+    margin-left: -40%;
+    margin-top: -25%;
+}
+
+.hr{
+    height: 3px;
+    background-color: #43766C;
+}
+
+.text:active{
+    color: #607274;
+}
+
+input , button{
+    width:60%;
+    height:125%;
+}
+
+.progress-bar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background:
+        radial-gradient(closest-side, white 80%, transparent 80% 100%),
+        conic-gradient(white 65%, blue 0);
+
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

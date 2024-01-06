@@ -1,0 +1,33 @@
+.new-chat-logo{
+    background-image: url('../assets/chatgpt_logo.png');
+    background-size: cover;
+}
+
+.new-chat-edit{
+    background-image: url('../assets/edit.png');
+    background-size: cover;
+}
+
+.main-edit-div{
+    position: fixed;
+    z-index: 2;
+    place-items: center;
+}
+
+.main-edit-div:hover , .profile-div:hover {
+    background-color: #1e1e25;
+}
+
+.profile-div{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: translateX(13%);
+}
+
+.logout-div{
+    position: fixed;
+    bottom: 0;
+    transform: translateX(170%);
+    visibility: hidden;
+}

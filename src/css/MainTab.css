@@ -1,0 +1,66 @@
+.main{
+    background-color: #343541;
+    min-height: 100%;
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+.submit-button{
+    background-image: url('../assets/submit.png');
+    background-size: cover;
+    width: 7%;
+    margin-top: -40px;
+}
+
+.input-field{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 93%;
+    height: 80px;
+    resize: none;
+}
+
+.text-field{border: none;
+    height: 450px;
+    overflow: auto;
+}
+
+.form-div{
+    background-color: transparent;
+    max-width: 1080px;
+    min-width: 900px;
+}
+
+.main-form-div{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-30%);
+}
+
+.chat-tab{
+    top: 100%;
+    transform: translateY(100%);
+}
+
+.message-tab{
+    right: 100%;
+    transform: translateX(30%);
+    width:65%;
+}
+
+.hr{
+    width:100%;
+    margin-bottom: 15px;
+}
+
+.mes-name-div{
+    margin-top:25%;
+    height:82%;
+    overflow: auto;
+}
+
+.each-mes-div:hover{
+background-color: rgb(24, 17, 17);
+}

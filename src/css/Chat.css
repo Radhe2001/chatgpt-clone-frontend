@@ -1,0 +1,9 @@
+.logo {
+    background-image: url('../assets/chatgpt_logo.png');
+    background-size: cover;
+}
+
+.logo-div {
+    width: 100%;
+}
+
