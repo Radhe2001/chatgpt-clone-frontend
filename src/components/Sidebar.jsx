@@ -54,14 +54,14 @@ function Sidebar({
   return (
     <>
       <div
-        className="main-edit-div flex text-cyan-300 my-6 py-3 px-4 gap-2 place-content-center mx-5 rounded-lg"
+        className="main-edit-div flex text-cyan-300 my-4 py-3 px-4 gap-2 place-content-center mx-5 rounded-lg"
         onClick={newChatClick}
       >
         <div className="new-chat-logo h-8 w-8 rounded-full" />
-        <div className="text-lg">New chat</div>
-        <div className="new-chat-edit h-6 w-6 ml-24" />
+        <div className="text-lg mr-6">New chat</div>
+        <div className="new-chat-edit h-6 w-6 ml-auto " />
       </div>
-      <div className="mes-name-div text-cyan-300 text-xl px-8 py-4">
+      <div className="mes-name-div text-cyan-300 text-md px-8 py-4">
         {data.map((value,index) => {
           return (
             <div key={index}
@@ -73,9 +73,9 @@ function Sidebar({
                 setLoading(false);
               }}
             >
-              {value.question.length < 25
+              {value.question.length < 21
                 ? value.question
-                : value.question.slice(0, 23) + "..."}
+                : value.question.slice(0, 18) + "..."}
             </div>
           );
         })}
@@ -89,11 +89,11 @@ function Sidebar({
         </center>
       </div>
       <div
-        className="profile-div flex text-cyan-300 text-xl gap-4 font-semibold place-items-center mb-5 px-4 py-2 rounded-lg"
+        className="profile-div flex text-cyan-300 text-md gap-4 font-semibold place-items-center mb-5 px-2 py-2 rounded-lg"
         onClick={showLogout}
       >
-        <div className="h-10 w-10 rounded-full bg-white">
-          <img className="h-10 w-10 rounded-full" src={mypic} />
+        <div className="h-8 w-8 rounded-full bg-white">
+          <img className="h-8 w-8 rounded-full" src={mypic} />
         </div>
         <div>{userName}</div>
       </div>
